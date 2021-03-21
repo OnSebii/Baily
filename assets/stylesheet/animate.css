@@ -1,0 +1,49 @@
+
+.bounceInEffect {
+	display: inline-block;
+	margin: 0 0.5rem;
+	animation: bounceIn;
+	animation-duration: 2s;
+}
+
+.swingEffect {
+	display: inline-block;
+	margin: 0 0.5rem;
+	animation: swing;
+	animation-duration: 2s;
+}
+
+.tadaEffect {
+	display: inline-block;
+	margin: 0 0.5rem;
+	animation: tada;
+	animation-duration: 2s;
+}
+
+.jelloEffect {
+	display: inline-block;
+	margin: 0 0.5rem;
+	animation: jello;
+	animation-duration: 2s;
+}
+
+.flashEffect {
+	display: inline-block;
+	margin: 0 0.5rem;
+	animation: flash;
+	animation-duration: 2s;
+}
+
+.pulseEffect {
+	display: inline-block;
+	margin: 0 0.5rem;
+	animation: pulse;
+	animation-duration: 2s;
+}
+
+.rubberBandEffect {
+	display: inline-block;
+	margin: 0 0.5rem;
+	animation: rubberBand;
+	animation-duration: 2s;
+}
