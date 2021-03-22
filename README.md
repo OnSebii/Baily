@@ -1,2 +1,3 @@
 # Baily
-Repository for my Website Baily.at
+
+Repository for my website Baily.at x Sebos.ch
