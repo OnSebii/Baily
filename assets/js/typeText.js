@@ -1,12 +1,12 @@
-var typed = new Typed('', {
-  strings: ['', 'Welcome to baily.at x sebos.ch'],
+var typed = new Typed('#animateText', {
+  strings: ['mountain biking', 'programming', 'photography'],
   smartBackspace: true,
   typeSpeed: 100,
   showCursor: true,
   cursorChar: '|',
   autoInsertCss: true,
   startDelay: 100,
-  onComplete: (self) => {
-    self.showCursor = false;
-  },
+  // loop: true,
+  // loopCount: Infinity,
+  onComplete: (self) => {},
 });
