@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/OnSebii/Baily/issues"
   },
-  "homepage": "https://github.com/OnSebii/Baily#readme"
+  "homepage": "https://github.com/OnSebii/Baily#readme",
+  "dependencies": {}
 }
