@@ -1,0 +1,124 @@
+:root {
+  --invertColor: black;
+}
+
+h1 {
+  color: var(--invertColor);
+}
+
+.cstmBorder {
+  border: 2px solid var(--invertColor);
+  padding: 10px;
+  color: var(--invertColor);
+}
+
+.cstmBorder:link {
+  text-decoration: none;
+}
+
+.cstmBorder:hover {
+  color: var(--invertColor);
+}
+
+.fab {
+  color: var(--invertColor);
+}
+
+hr {
+  border-top: 1px solid var(--invertColor) !important;
+  width: 200px;
+}
+
+.card {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background: #111;
+}
+
+.horizontalScroll {
+  width: 100vh;
+  height: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #2e2e2e;
+  padding: 30px;
+  -webkit-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: rotate(-90deg) translate3d(0, -100vh, 0);
+  transform: rotate(-90deg) translate3d(0, -100vh, 0);
+}
+.horizontalScroll > * {
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: rotate(90deg) translate3d(0, calc(-100vh + 60px), 0);
+  transform: rotate(90deg) translate3d(0, calc(-100vh + 60px), 0);
+}
+.item {
+  width: calc(100vh - 60px);
+  height: calc(100vh - 60px);
+  background: #fdfffc;
+  position: relative;
+}
+.item:not(:first-child) {
+  margin-top: 30px;
+}
+.item .bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: no-repeat center center / cover;
+  opacity: 0.8;
+  background-blend-mode: luminosity;
+}
+
+/* Demo Purpose Only*/
+.demo {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+}
+.demo a {
+  font-family: 'Raleway', sans-serif;
+  color: #2ecc71;
+}
+h3 {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+}

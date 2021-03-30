@@ -1,5 +1,18 @@
 new fullpage('#fullpage', {
   licenseKey: '',
   autoScrolling: true,
-  sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE'],
+  anchors: ['hey', 'about', 'projects', 'photos'],
+  //sectionsColor: ['#252934', '#4BBFC3', '#7BAABE'],
+  navigation: true,
+  navigationPosition: 'right',
+  keyboardScrolling: true,
+
+  slidesNavigation: true,
+  slidesNavPosition: 'top',
+  scrollHorizontally: true,
+  css3: true,
+
+  //Scrolling
+  dragAndMove: true,
 });
+
