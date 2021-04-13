@@ -1,0 +1,13 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "abc",
+      "description": "",
+      "thumbnail": "",
+      "link": "",
+      "authors": [{ "Sebi": "https://baily.at" }]
+    },
+    {}
+  ]
+}
