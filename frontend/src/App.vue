@@ -12,7 +12,6 @@ export default {
   components: {
     navbar,
   },
-  data() {},
   methods: {},
 };
 </script>
