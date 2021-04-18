@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div id="app">
     <kinesis-container class="container">
       <kinesis-element>
         <!-- LogRocket logo -->
@@ -22,18 +22,28 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'App',
+  components: {},
+};
+</script>
+
 <style>
-#about {
+#app {
   text-align: center;
 }
+
 .container {
   padding: 15rem 0;
   background-color: #7749bd;
 }
+
 .circle {
   position: absolute;
   border-radius: 100%;
 }
+
 .circle.circle-purple {
   border: 10px solid #f2eafa;
   opacity: 0.1;
@@ -42,6 +52,7 @@
   left: 10%;
   top: 25%;
 }
+
 .circle.circle-purple1 {
   border: 15px solid #f2eafa;
   opacity: 0.1;
@@ -58,6 +69,7 @@
   left: 20%;
   bottom: 17%;
 }
+
 .circle.circle-purple3 {
   border: 15px solid #f2eafa;
   opacity: 0.3;
