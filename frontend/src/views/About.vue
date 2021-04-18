@@ -22,7 +22,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 #about {
   text-align: center;
 }

@@ -1,0 +1,7 @@
+{
+  "links": [
+    { "name": "Home", "linkTo": "/" },
+    { "name": "Projects", "linkTo": "/projects" },
+    { "name": "Gallery", "linkTo": "/gallery" }
+  ]
+}
