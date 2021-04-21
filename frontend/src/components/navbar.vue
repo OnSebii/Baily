@@ -2,6 +2,7 @@
   <div>
     <!-- TODO: Navbar Floating -->
     <!-- TODO: Animations -->
+    <!-- TODO: Wenn die Navbar kleiner wird rückt das burger menu nach unten. Liegt an der container width -->
     <mdb-navbar dark color="elegant-color-dark">
       <div class="container">
         <mdb-navbar-brand href="https://baily.at/"> Baily.at </mdb-navbar-brand>

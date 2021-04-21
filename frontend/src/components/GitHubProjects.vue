@@ -1,7 +1,7 @@
 <template>
   <div>
     <mdb-row class="m-3 d-flex justify-content-center">
-      <mdb-col md="3" class="m-3">
+      <mdb-col md="3" class="m-3" v-for="repo in gitHubRepos" :key="repo.id">
         <mdb-card>
           <mdb-view hover>
             <a href="#!">
@@ -35,7 +35,7 @@
 </template>
 
 <script>
-// import axios from 'axios';
+import axios from 'axios';
 import { mdbRow, mdbCol, mdbCard, mdbCardImage, mdbCardBody, mdbCardTitle, mdbCardFooter, mdbView, mdbMask, mdbIcon } from 'mdbvue';
 export default {
   name: 'NavBar',
@@ -52,9 +52,16 @@ export default {
     mdbIcon,
   },
   data() {
-    return {};
+    return {
+      gitHubRepos: null,
+    };
   },
-  created() {},
+  created() {
+    // Axios call evtl umbauen
+    axios.get('https://api.github.com/users/onsebii/repos').then((response) => {
+      this.gitHubRepos = response.data;
+    });
+  },
 };
 </script>
 
