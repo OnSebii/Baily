@@ -2,11 +2,12 @@
   <v-app>
     <v-app-bar app absolute position="sticky" color="white" class="font">
       <v-spacer></v-spacer>
-      <router-link to="/" class="mx-2">Start</router-link>
-      <router-link to="" class="mx-2">Current Projects</router-link>
-      <router-link to="" class="mx-2">Other work</router-link>
-      <router-link to="/about" class="mx-2">About</router-link>
-      <router-link to="" class="mx-2">Contact</router-link>
+      <!-- <router-link to="/" class="mx-2 text-decoration-none" active-class="active">Start</router-link>
+      <router-link to="" class="mx-2 text-decoration-none" active-class="active">Current Projects</router-link>
+      <router-link to="" class="mx-2 text-decoration-none" active-class="active">Other work</router-link>
+      <router-link to="/about" class="mx-2 text-decoration-none" active-class="active">About</router-link>
+      <router-link to="" class="mx-2 text-decoration-none" active-class="active">Contact</router-link> -->
+      <router-link v-for="el of links" :key="el[0].text" class="mx-2 text-decoration-none" active-class="active" :to="el[0].link">{{ el[0].text }}</router-link>
     </v-app-bar>
 
     <v-main>
@@ -32,7 +33,7 @@
 
         <v-divider></v-divider>
 
-        <v-card-text class="white--text"> {{ new Date().getFullYear() }} — <strong>Sebastian Lang</strong> </v-card-text>
+        <v-card-text class="white--text">Copyright © {{ new Date().getFullYear() }} — Sebastian Lang </v-card-text>
       </v-card>
     </v-footer>
   </v-app>
@@ -41,15 +42,25 @@
 <script>
 export default {
   name: 'App',
-
-  data: () => ({
-    //
-  }),
+  data() {
+    return {
+      links: {
+        start: [{ text: 'Home', link: '/' }],
+        cp: [{ text: 'Current Projects', link: '#' }],
+        ow: [{ text: 'Other work', link: '#' }],
+        about: [{ text: 'About', link: '/about' }],
+        contact: [{ text: 'Contact', link: '#' }],
+      },
+    };
+  },
 };
 </script>
 
-<style>
+<style scoped>
 .font {
   font-family: louis-george;
+}
+.active {
+  color: blue;
 }
 </style>
