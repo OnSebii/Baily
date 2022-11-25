@@ -2,16 +2,11 @@
   <v-app>
     <v-app-bar app absolute position="sticky" color="white" class="font">
       <v-spacer></v-spacer>
-      <!-- <router-link to="/" class="mx-2 text-decoration-none" active-class="active">Start</router-link>
-      <router-link to="" class="mx-2 text-decoration-none" active-class="active">Current Projects</router-link>
-      <router-link to="" class="mx-2 text-decoration-none" active-class="active">Other work</router-link>
-      <router-link to="/about" class="mx-2 text-decoration-none" active-class="active">About</router-link>
-      <router-link to="" class="mx-2 text-decoration-none" active-class="active">Contact</router-link> -->
       <router-link v-for="el of links" :key="el[0].text" class="mx-2 text-decoration-none" active-class="active" :to="el[0].link">{{ el[0].text }}</router-link>
     </v-app-bar>
 
     <v-main>
-      <router-view />
+        <router-view />
     </v-main>
 
     <v-footer dark padless>
