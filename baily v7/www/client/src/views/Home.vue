@@ -6,15 +6,18 @@
       <div class="d-flex justify-center mt-12"><v-img max-height="250" max-width="250" src="@/assets/images/placeholder.png"></v-img></div>
     </div>
     <about></about>
+    <projects></projects>
   </div>
 </template>
 
 <script>
 import about from '@/components/About.vue';
+import projects from '@/components/Projects.vue';
 export default {
   name: 'Home',
   components: {
-    about
+    about,
+    projects,
   },
 };
 </script>
