@@ -3,23 +3,33 @@
     <div class="about text-center">
       <v-container>
         <h2>My Recent Work</h2>
-        <v-row no-gutters class="pa-1">
+        <v-row>
           <v-col cols="12" sm="4">
-            <v-card class="pa-2" outlined tile> One of three columns </v-card>
+            <card></card>
           </v-col>
           <v-col cols="12" sm="4">
-            <v-card class="pa-2" outlined tile> One of three columns </v-card>
+            <card></card>
           </v-col>
           <v-col cols="12" sm="4">
-            <v-card class="pa-2" outlined tile> One of three columns </v-card>
+            <card></card>
           </v-col>
           <v-col cols="12" sm="4">
-            <v-card class="pa-2" outlined tile> One of three columns </v-card>
+            <card></card>
           </v-col>
         </v-row>
       </v-container>
     </div>
   </div>
 </template>
+
+<script>
+import card from '@/components/Card.vue';
+export default {
+  name: 'Projects',
+  components: {
+    card,
+  },
+};
+</script>
 
 <style scoped></style>
